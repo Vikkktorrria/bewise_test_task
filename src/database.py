@@ -12,13 +12,11 @@ POSTGRES_PASSWORD = os.environ.get('POSTGRES_PASSWORD', default='postgres')
 
 SQLALCHEMY_DATABASE_URI = f'postgresql://{POSTGRES_USER}:{POSTGRES_PASSWORD}@{POSTGRES_HOST}:{POSTGRES_PORT}/{POSTGRES_DB}'
 
-#print(POSTGRES_DB, POSTGRES_USER, POSTGRES_HOST, POSTGRES_PORT, POSTGRES_PASSWORD)
 
 engine = create_engine(SQLALCHEMY_DATABASE_URI)
 Session = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 
-# Подключение базы (с автоматической генерацией моделей)
 class Base(DeclarativeBase):
     pass
 
