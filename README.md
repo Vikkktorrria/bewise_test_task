@@ -27,3 +27,5 @@ docker-compose build
 ```
 docker-compose up
 ```
+
+Для удобства проверять можно на странице <code>http://127.0.0.1:8000/docs/</code>
