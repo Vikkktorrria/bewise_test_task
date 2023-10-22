@@ -18,7 +18,7 @@
  1. Скачать и установить Docker и Docker Compose (или же Docker Desktop, который по умолчанию содержит Docker Compose)
 
 
- 2. В той же директории, где расположен файл docker-compose.yml выполнить команду "собрать образ" 
+ 2. В той же директории, где расположен файл docker-compose.yml, выполнить команду "собрать образ" 
 ```
 docker-compose build
 ```
