@@ -3,7 +3,6 @@ from datetime import datetime as dt
 from sqlalchemy import create_engine, Column, Integer, String, DateTime
 from sqlalchemy.orm import sessionmaker, DeclarativeBase
 
-# Создание сессии
 POSTGRES_DB = os.environ.get('POSTGRES_DB', default='postgres')
 POSTGRES_USER = os.environ.get('POSTGRES_USER', default='postgres')
 POSTGRES_HOST = os.environ.get('POSTGRES_HOST', default='0.0.0.0')
